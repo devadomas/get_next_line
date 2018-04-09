@@ -6,13 +6,17 @@
 /*   By: azaliaus <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/09 14:28:49 by azaliaus          #+#    #+#             */
-/*   Updated: 2018/04/09 16:11:28 by azaliaus         ###   ########.fr       */
+/*   Updated: 2018/04/09 17:22:13 by azaliaus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef GET_NEXT_LINE_H
-/* # include "libft.h" */
+# include "libft.h"
 # include <stdlib.h>
+# include <sys/types.h>
+# include <sys/uio.h>
+# include <unistd.h>
+# include <fcntl.h>
 # define BUF_SIZE 32
 
 typedef struct		s_reader
