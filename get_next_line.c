@@ -6,7 +6,7 @@
 /*   By: azaliaus <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/09 14:29:52 by azaliaus          #+#    #+#             */
-/*   Updated: 2018/04/09 19:12:17 by azaliaus         ###   ########.fr       */
+/*   Updated: 2018/04/09 19:51:21 by azaliaus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,7 +71,7 @@ static int		read_line(t_reader *reader, char **line)
 	{
 		printf("needs to load more\n");
 		read_ret = read(reader->fd, &buff, BUF_SIZE);
-		if (read_ret <= 0)
+		if (read_ret < 0)
 			return (-1);
 		reader->line = ft_strjoin(reader->line, buff);
 		return (read_line(reader, line));
