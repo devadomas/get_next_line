@@ -6,7 +6,7 @@
 /*   By: azaliaus <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/09 14:28:49 by azaliaus          #+#    #+#             */
-/*   Updated: 2018/04/09 19:51:26 by azaliaus         ###   ########.fr       */
+/*   Updated: 2018/04/10 14:39:53 by azaliaus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 # include <sys/uio.h>
 # include <unistd.h>
 # include <fcntl.h>
-# define BUF_SIZE 32
+# define BUFF_SIZE 32
 
 typedef struct		s_reader
 {
