@@ -6,11 +6,13 @@
 /*   By: azaliaus <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/09 14:28:49 by azaliaus          #+#    #+#             */
-/*   Updated: 2018/04/10 18:06:20 by azaliaus         ###   ########.fr       */
+/*   Updated: 2018/04/11 11:11:06 by azaliaus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef GET_NEXT_LINE_H
+# define GET_NEXT_LINE_H
+
 # include "libft.h"
 # include <stdlib.h>
 # include <sys/types.h>
@@ -22,7 +24,6 @@
 typedef struct		s_reader
 {
 	int				fd;
-	int				error;
 	char			*line;
 	struct s_reader	*next;
 }					t_reader;
